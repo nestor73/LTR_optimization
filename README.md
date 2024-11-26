@@ -1,0 +1,11 @@
+La carpeta contiene los sigientes archivos:
+
+eval_man_articulos.csv: Los artículos entregados por los términos de búsqueda “deep mutational scanning” fueron revisados manualmente para determinar si eran relevantes de acuerdo a los criterios de inclusión y exclusión. El archivo csv muestra los PMID de los artículos revisados así como su evaluación con los criterios de inclusión y exclusión. En la  columna de “inclusión” se indica si el artículo cumplía o no con los criterios de inclusión, en la columna de “exclusión” se indica que criterio de exclusión presentaron los artículos para ser excluidos. Sólo los artículos que cumplieron con los criterios de inclusión y que no presentaron criterios de exclusión fueron considerados como artículos relevantes de la búsqueda bibliográfica (RB); aquellos que no cumplieron con los criterios de inclusión fueron considerados artículos no relevantes de la búsqueda bibliográfica (NRB).
+
+dftotalalgor.csv: En este archivo se muestran los hiperparametros e índices de desempeño de los 108 algoritmos obtenidos durante la primera corrida de AutoWEKA. Además se especifican las características experimentales con las que fueron obtenidos, el tipo de negativo, tiempo de ejecucion de Auto-WEKA, filtro de palabras utilizado y muestreo aleatorio.
+
+dfwilcox.csv: Para evaluar el efecto de las diferentes condiciones experimentales se evaluaron 27 índices de desempeño para las 3 combinatorias de los 3 tipos de negativos, las 3 combinatorias de los 3 tiempos de ejecución, las 3 combinatorias de los 3 muestreos aleatorios y las 6 combinatorias de los 4 filtros de palabras (27x3 + 27x3 + 27x3 + 27x6 = 405) estas combinatorias fueron evaluadas con Mann-Whitney,corregido por Benjamini-Hochberg,Holm y Bonferroni,los resultados de estas 405 combinatorias se encuentran en este archivo.
+
+dfoptim.csv: En este archivo se muestra los hiperparametros e índices de desempeño de los algoritmos obtenidos durante la aplicación de las estrategias de optimización, asi como las condiciones experimentales que permitieron su obtención.
+
+dfdiscov: Compara el desempeño entre la jerarquización de resultados del metodo propuesto en este trabajo y el obtenido con Best Match de PubMed. Utilizado los criterios de inlusión y exclusión se determinó si los primeros resultados obtenidos con ambos métodos eran relevantes.
